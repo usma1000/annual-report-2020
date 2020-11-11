@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/pattern.png");
+  background: black url("/pattern.png");
   color: white;
   padding: 5vw;
 }

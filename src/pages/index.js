@@ -47,7 +47,8 @@ export const pageQuery = graphql`
           slug
           tags
           heroImage {
-            fixed(width: 350, height: 350, resizingBehavior: FILL) {
+            description
+            fixed(width: 350, height: 250, resizingBehavior: FILL) {
               ...GatsbyContentfulFixed
             }
           }
