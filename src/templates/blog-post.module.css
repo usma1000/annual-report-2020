@@ -1,10 +1,34 @@
-.hero {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: url("/pattern.png");
+  color: white;
+}
 
-  height: 12.5em;
-  background: #e1e1e1;
-  margin: -1em -2.5em 1em;
-  font-size: 2em
+.img {
+  width: 50vw;
+  padding: 5vw;
+}
+
+.story {
+  padding: 10vh 5vw;
+  max-width: 30vw;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 4em;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 2.5em;
+}
+
+.title,
+.subtitle {
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
 }
