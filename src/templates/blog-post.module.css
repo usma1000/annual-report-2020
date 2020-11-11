@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: url("/pattern.png");
+  background: url("/pattern.png");
   color: white;
+  padding: 5vw;
 }
 
 .img {
@@ -14,6 +15,7 @@
 .story {
   padding: 10vh 5vw;
   max-width: 30vw;
+  background-color: black;
 }
 
 .title {

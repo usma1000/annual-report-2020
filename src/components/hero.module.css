@@ -10,8 +10,8 @@
     Ensure golden ratio for the hero size while limiting it to some extend to
     the viewport width
   */
-  height: 61.8vh;
-  max-height: 400px;
+  /* height: 61.8vh; */
+  /* max-height: 400px; */
 }
 
 .heroDetails {
@@ -24,13 +24,13 @@
   padding: 0 0.5em;
 }
 
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   .heroDetails {
     font-size: 16px;
   }
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
   .heroDetails {
     font-size: 20px;
   }

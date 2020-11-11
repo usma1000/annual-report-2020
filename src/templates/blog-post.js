@@ -49,7 +49,7 @@ export const pageQuery = graphql`
       title
       subtitle
       heroImage {
-        fluid(maxWidth: 1180, background: "rgb:000000") {
+        fluid(maxWidth: 500, background: "rgb:000000") {
           ...GatsbyContentfulFluid
         }
       }

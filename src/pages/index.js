@@ -18,7 +18,7 @@ class RootIndex extends React.Component {
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
           <div className="wrapper">
-            <h2 className="section-headline">Recent articles</h2>
+            <h2 className="section-headline">Stories</h2>
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
@@ -47,8 +47,8 @@ export const pageQuery = graphql`
           slug
           tags
           heroImage {
-            fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
-              ...GatsbyContentfulFluid_tracedSVG
+            fixed(width: 350, height: 350, resizingBehavior: FILL) {
+              ...GatsbyContentfulFixed
             }
           }
           description {
@@ -76,7 +76,7 @@ export const pageQuery = graphql`
               resizingBehavior: PAD
               background: "rgb:000000"
             ) {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
         }
