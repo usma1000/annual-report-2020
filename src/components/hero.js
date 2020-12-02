@@ -1,10 +1,12 @@
-import React from 'react'
-import Img from 'gatsby-image'
+import React from "react";
+import Img from "gatsby-image";
+import CanvasMesh from "./3D/CanvasMesh";
 
-import styles from './hero.module.css'
+import styles from "./hero.module.css";
 
 export default ({ data }) => (
-  <div className={styles.hero}>
+  <div className={styles.hero} style={{ position: "relative" }}>
+    <CanvasMesh />
     <Img
       className={styles.heroImage}
       alt={data.name}
@@ -16,4 +18,4 @@ export default ({ data }) => (
       <p>{data.shortBio.shortBio}</p>
     </div>
   </div>
-)
+);
