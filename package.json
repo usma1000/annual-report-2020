@@ -1,5 +1,5 @@
 {
-  "name": "CWRU AR 2020",
+  "name": "CWRU-AR-2020",
   "description": "Contentful Gatsby Starter Blog",
   "private": true,
   "version": "0.0.2",
@@ -38,7 +38,7 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "heroku-postbuild": "gatsby build",
     "serve": "gatsby serve",
     "postinstall": "node ./bin/hello.js",
