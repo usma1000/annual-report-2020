@@ -1,36 +1,46 @@
 .container {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background: black url("/pattern.png");
   color: white;
   padding: 5vw;
+  overflow: hidden;
+  position: relative;
 }
 
 .img {
   width: 50vw;
-  padding: 5vw;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
 }
 
 .story {
   padding: 10vh 5vw;
   max-width: 30vw;
   background-color: black;
+  border: 1px solid #c1cd24;
+  position: relative;
+  z-index: 2;
+}
+
+.category {
+  font-weight: 900;
+  font-size: 1.2em;
+  color: #c1cd24;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .title {
-  font-weight: 900;
-  font-size: 4em;
-}
-
-.subtitle {
   font-weight: 600;
   font-size: 2.5em;
 }
 
-.title,
-.subtitle {
-  text-align: center;
+.category,
+.title {
   margin: 0;
   line-height: 1.2;
 }

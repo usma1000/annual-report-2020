@@ -38,12 +38,11 @@ export default BlogIndex;
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    allContentfulStory(sort: { fields: [publishDate], order: DESC }) {
+    allContentfulStory(sort: { fields: [tags], order: DESC }) {
       edges {
         node {
           title
           slug
-          publishDate(formatString: "MMMM Do, YYYY")
           tags
           heroImage {
             fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {

@@ -37,5 +37,14 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Titillium Web\:400,400i,600,900`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
   ],
 };

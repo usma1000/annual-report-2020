@@ -8,9 +8,7 @@ export default ({ article }) => (
   <div className={styles.preview}>
     <Img alt={article.heroImage.description} fixed={article.heroImage.fixed} />
     <h3 className={styles.previewTitle}>
-      <Link to={`/story/${article.slug}`}>
-        {article.title} {article.subtitle}
-      </Link>
+      <Link to={`/story/${article.slug}`}>{article.title}</Link>
     </h3>
     <p
       dangerouslySetInnerHTML={{
