@@ -39,6 +39,7 @@ a {
   width: calc(100% - 10vmin);
   margin: 0 auto;
   padding: 5vmin 0;
+  color: #ddd;
 }
 
 /**
@@ -50,7 +51,8 @@ a {
   list-style: none;
   display: flex;
   justify-content: center;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 5vmin;
 }
 

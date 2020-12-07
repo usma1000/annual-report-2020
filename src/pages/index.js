@@ -4,29 +4,31 @@ import get from "lodash/get";
 import { Helmet } from "react-helmet";
 import Hero from "../components/hero";
 import Layout from "../components/layout";
-import ArticlePreview from "../components/article-preview";
+import PostSection from "../components/post-section";
 
 class RootIndex extends React.Component {
   render() {
     const title = get(this, "props.data.site.siteMetadata.title");
     const posts = get(this, "props.data.allContentfulStory.edges");
+    const communityPosts = posts.filter(
+      ({ node }) => node.tags[0] === "community"
+    );
+    const innovationPosts = posts.filter(
+      ({ node }) => node.tags[0] === "innovation"
+    );
+    const researchPosts = posts.filter(
+      ({ node }) => node.tags[0] === "research"
+    );
 
     return (
       <Layout location={this.props.location}>
-        <div style={{ background: "#fff" }}>
+        <div>
           <Helmet title={title} />
           <Hero />
           <div className="wrapper">
-            <h2 className="section-headline">Stories</h2>
-            <ul className="article-list">
-              {posts.map(({ node }) => {
-                return (
-                  <li key={node.slug}>
-                    <ArticlePreview article={node} />
-                  </li>
-                );
-              })}
-            </ul>
+            <PostSection headline="Community" posts={communityPosts} />
+            <PostSection headline="Innovation" posts={innovationPosts} />
+            <PostSection headline="Research" posts={researchPosts} />
           </div>
         </div>
       </Layout>
