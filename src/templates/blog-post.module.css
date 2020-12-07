@@ -19,7 +19,8 @@
 
 .story {
   padding: 10vh 5vw;
-  max-width: 30vw;
+  width: 30vw;
+  min-width: 430px;
   background-color: black;
   border: 1px solid #c1cd24;
   position: relative;

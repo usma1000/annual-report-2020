@@ -2,9 +2,12 @@ import React from "react";
 import { graphql } from "gatsby";
 import get from "lodash/get";
 import { Helmet } from "react-helmet";
-import Hero from "../components/hero";
+import Hero from "../components/Hero/hero";
 import Layout from "../components/layout";
-import PostSection from "../components/post-section";
+import PostSection from "../components/PostSection/post-section";
+import communityIcon from "../components/Icons/Community.svg";
+import researchIcon from "../components/Icons/Research.svg";
+import innovationIcon from "../components/Icons/Innovation.svg";
 
 class RootIndex extends React.Component {
   render() {
@@ -26,9 +29,21 @@ class RootIndex extends React.Component {
           <Helmet title={title} />
           <Hero />
           <div className="wrapper">
-            <PostSection headline="Community" posts={communityPosts} />
-            <PostSection headline="Innovation" posts={innovationPosts} />
-            <PostSection headline="Research" posts={researchPosts} />
+            <PostSection
+              icon={communityIcon}
+              headline="Community"
+              posts={communityPosts}
+            />
+            <PostSection
+              icon={innovationIcon}
+              headline="Innovation"
+              posts={innovationPosts}
+            />
+            <PostSection
+              icon={researchIcon}
+              headline="Research"
+              posts={researchPosts}
+            />
           </div>
         </div>
       </Layout>

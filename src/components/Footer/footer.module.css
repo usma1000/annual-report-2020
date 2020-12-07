@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vmin 5vw;
+  color: #888;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+}
+
+.links li {
+  padding: 10px;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: white;
+}

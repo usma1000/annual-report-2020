@@ -1,5 +1,5 @@
 import React from "react";
-import CanvasMesh from "./3D/CanvasMesh";
+import CanvasMesh from "../3D/CanvasMesh";
 
 import styles from "./hero.module.css";
 
