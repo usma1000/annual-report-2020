@@ -2,4 +2,40 @@
   font-weight: 900;
   color: #c1cd24;
   font-size: 3em;
+  position: absolute;
+  top: -1.9em;
+  background-color: black;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  margin: 10em 0;
+}
+
+.textBox {
+  border: 1px solid #c1cd24;
+  padding: 2em;
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 16px 30px;
+  background-color: black;
+  border: 1px solid #c1cd24;
+  transform: translate(20px, 50%);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c1cd24;
+  color: black;
 }

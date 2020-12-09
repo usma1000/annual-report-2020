@@ -10,7 +10,7 @@ export default ({ article }) => (
     <h3 className={styles.previewTitle}>
       <Link to={`/${article.slug}`}>{article.title}</Link>
     </h3>
-    <p
+    <div
       dangerouslySetInnerHTML={{
         __html: article.description.childMarkdownRemark.html,
       }}

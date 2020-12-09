@@ -5,3 +5,10 @@
   text-align: center;
   height: 100vh;
 }
+
+.title {
+  font-size: 10em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #c1cd24;
+}

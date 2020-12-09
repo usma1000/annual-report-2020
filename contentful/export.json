@@ -192,116 +192,99 @@
             "description": "",
             "fields": [
                 {
-                    "id": "title",
-                    "name": "Title",
+                  "id": "title",
+                  "name": "Title",
+                  "type": "Symbol",
+                  "localized": false,
+                  "required": true,
+                  "validations": [],
+                  "disabled": false,
+                  "omitted": false
+                },
+                {
+                  "id": "slug",
+                  "name": "Slug",
+                  "type": "Symbol",
+                  "localized": false,
+                  "required": true,
+                  "validations": [],
+                  "disabled": false,
+                  "omitted": false
+                },
+                {
+                  "id": "heroImage",
+                  "name": "Hero Image",
+                  "type": "Link",
+                  "localized": false,
+                  "required": true,
+                  "validations": [],
+                  "disabled": false,
+                  "omitted": false,
+                  "linkType": "Asset"
+                },
+                {
+                  "id": "description",
+                  "name": "Description",
+                  "type": "Text",
+                  "localized": false,
+                  "required": true,
+                  "validations": [],
+                  "disabled": false,
+                  "omitted": false
+                },
+                {
+                  "id": "body",
+                  "name": "Body",
+                  "type": "Text",
+                  "localized": false,
+                  "required": true,
+                  "validations": [],
+                  "disabled": false,
+                  "omitted": false
+                },
+                {
+                  "id": "pullquote",
+                  "name": "Pullquote",
+                  "type": "Text",
+                  "localized": false,
+                  "required": false,
+                  "validations": [],
+                  "disabled": false,
+                  "omitted": false
+                },
+                {
+                  "id": "quoteAuthor",
+                  "name": "Quote Author",
+                  "type": "Symbol",
+                  "localized": false,
+                  "required": false,
+                  "validations": [],
+                  "disabled": false,
+                  "omitted": false
+                },
+                {
+                  "id": "tags",
+                  "name": "Tags",
+                  "type": "Array",
+                  "localized": false,
+                  "required": false,
+                  "validations": [],
+                  "disabled": false,
+                  "omitted": false,
+                  "items": {
                     "type": "Symbol",
-                    "localized": false,
-                    "required": true,
-                    "validations": [],
-                    "disabled": false,
-                    "omitted": false
-                },
-                {
-                    "id": "subtitle",
-                    "name": "Subtitle",
-                    "type": "Symbol",
-                    "localized": false,
-                    "required": false,
-                    "validations": [],
-                    "disabled": false,
-                    "omitted": false
-                  },
-                {
-                    "id": "slug",
-                    "name": "Slug",
-                    "type": "Symbol",
-                    "localized": false,
-                    "required": true,
-                    "validations": [],
-                    "disabled": false,
-                    "omitted": false
-                },
-                {
-                    "id": "heroImage",
-                    "name": "Hero Image",
-                    "type": "Link",
-                    "localized": false,
-                    "required": true,
-                    "validations": [],
-                    "disabled": false,
-                    "omitted": false,
-                    "linkType": "Asset"
-                },
-                {
-                    "id": "description",
-                    "name": "Description",
-                    "type": "Text",
-                    "localized": false,
-                    "required": true,
-                    "validations": [],
-                    "disabled": false,
-                    "omitted": false
-                },
-                {
-                    "id": "body",
-                    "name": "Body",
-                    "type": "Text",
-                    "localized": false,
-                    "required": true,
-                    "validations": [],
-                    "disabled": false,
-                    "omitted": false
-                },
-                {
-                    "id": "author",
-                    "name": "Author",
-                    "type": "Link",
-                    "localized": false,
-                    "required": false,
                     "validations": [
-                        {
-                            "linkContentType": [
-                                "person"
-                            ]
-                        }
-                    ],
-                    "disabled": false,
-                    "omitted": false,
-                    "linkType": "Entry"
-                },
-                {
-                    "id": "publishDate",
-                    "name": "Publish Date",
-                    "type": "Date",
-                    "localized": false,
-                    "required": true,
-                    "validations": [],
-                    "disabled": false,
-                    "omitted": false
-                },
-                {
-                    "id": "tags",
-                    "name": "Tags",
-                    "type": "Array",
-                    "localized": false,
-                    "required": false,
-                    "validations": [],
-                    "disabled": false,
-                    "omitted": false,
-                    "items": {
-                        "type": "Symbol",
-                        "validations": [
-                            {
-                                "in": [
-                                    "general",
-                                    "javascript",
-                                    "static-sites"
-                                ]
-                            }
+                      {
+                        "in": [
+                          "research",
+                          "innovation",
+                          "community"
                         ]
-                    }
+                      }
+                    ]
+                  }
                 }
-            ]
+              ]
         }
     ],
     "editorInterfaces": [

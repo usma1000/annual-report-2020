@@ -1,30 +1,39 @@
 import React from "react";
 import { Link } from "gatsby";
-import styles from "./navigation.module.css";
 import logo from "./cwrulogo.svg";
-import { useSpring, animated } from "react-spring";
+import styles from "./navigation.module.css";
 
 const Navigation = () => {
-  const inTop = useSpring({
-    transform: "translateY(0)",
-    from: { transform: "translateY(-100%)" },
-  });
   return (
-    <animated.nav style={inTop} role="navigation" className={styles.container}>
-      <div className={styles.logo}>
-        <a href="https://case.edu/">
-          <img alt="CWRU Logo" src={logo} />
-        </a>
-      </div>
-      <ul className={styles.navigation}>
-        <li className={styles.navigationItem}>
-          <Link to="/">Home</Link>
-        </li>
-        <li className={styles.navigationItem}>
-          <Link to="/university-trustees-and-leadership">Leadership</Link>
-        </li>
-      </ul>
-    </animated.nav>
+    <>
+      <nav role="navigation" className={styles.container}>
+        <div className={styles.logo}>
+          <a href="https://case.edu/">
+            <img alt="CWRU Logo" src={logo} />
+          </a>
+        </div>
+        <ul className={styles.navigation}>
+          <li className={styles.navigationItem}>
+            <Link to="/">Home</Link>
+          </li>
+          <li className={styles.navigationItem}>
+            <Link to="/innovation">Innovation</Link>
+          </li>
+          <li className={styles.navigationItem}>
+            <Link to="/research">Research</Link>
+          </li>
+          <li className={styles.navigationItem}>
+            <Link to="/community">Community</Link>
+          </li>
+          <li className={styles.navigationItem}>
+            <Link to="/university-trustees-and-leadership">Leadership</Link>
+          </li>
+          <li className={styles.navigationItem}>
+            <Link to="/presidents-letter">President's Letter</Link>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 };
 

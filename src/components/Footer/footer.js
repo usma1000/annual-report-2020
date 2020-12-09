@@ -3,7 +3,8 @@ import styles from "./footer.module.css";
 
 const Footer = () => (
   <footer className={styles.container}>
-    © 2020 Case Western Reserve University
+    <div>Annual Report 2019 - 2020</div>
+    <div className={styles.copy}>© 2020 Case Western Reserve University</div>
     <ul className={styles.links}>
       <li>
         <a href="https://case.edu/admissions">Apply</a>

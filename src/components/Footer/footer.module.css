@@ -1,18 +1,28 @@
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding: 1vmin 5vw;
   color: #888;
+  position: relative;
+  z-index: 2;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+.copy {
+  text-transform: unset;
+  font-size: 16px;
 }
 
 .links {
   list-style: none;
   display: flex;
+  margin: 0;
 }
 
 .links li {
-  padding: 10px;
+  padding: 10px 10px 0 10px;
 }
 
 .links a {

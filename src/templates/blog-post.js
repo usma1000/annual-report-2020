@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { useSpring, animated } from "react-spring";
-import get from "lodash/get";
 import Img from "gatsby-image";
 import Layout from "../components/layout";
 import blogStyles from "./blog-post.module.css";
@@ -16,16 +15,15 @@ const StoryTemplate = (props) => {
   const [loaded, setLoaded] = useState(false);
   const growImg = useSpring({
     opacity: loaded ? 0.75 : 0.5,
-    width: loaded ? "70vw" : "50vw",
-    from: { width: "50vw", opacity: 0.5 },
+    width: loaded ? "70vmax" : "50vmax",
+    from: { width: "50vmax", opacity: 0.5 },
   });
   const post = props.data.contentfulStory;
-  const siteTitle = get(props, "data.site.siteMetadata.title");
   const titleChars = [...post.tags[0]];
 
   return (
     <Layout location={props.location}>
-      <Helmet title={`${post.title} | ${siteTitle}`} />
+      <Helmet title={`${post.title} | Case Western Reserve University`} />
       <div className={blogStyles.container}>
         <animated.div style={(fade, inLeft)} className={blogStyles.story}>
           <div className={blogStyles.category}>
