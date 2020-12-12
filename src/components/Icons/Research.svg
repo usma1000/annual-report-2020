@@ -11,12 +11,12 @@
             </g>
             <g id="Bulb" transform="translate(70.000000, 17.000000)" stroke="#FFFFFF" stroke-width="2">
                 <path d="M9.62,33.63 L21.01,33.63 C21.62,29.63 23.6,27.77 25.7,25.79 C26.31,25.22 26.95,24.62 27.54,23.98 C29.45,21.71 30.27,19.19 30.27,15.52 C30.0603703,7.41665412 23.4310569,0.956619968 15.325,0.956619968 C7.21894306,0.956619968 0.589629664,7.41665412 0.38,15.52 C0.26851566,18.5559314 1.22380959,21.5350332 3.08,23.94 C3.7,24.62 4.34,25.22 4.96,25.81 C6.37827907,26.9982499 7.57653,28.4266733 8.5,30.03" id="Path" stroke-linecap="round"></path>
-                <path d="M10.41,42.92 L12.32,42.92 C13.1113286,43.7237441 14.1920791,44.1763413 15.32,44.1763413 C16.4479209,44.1763413 17.5286714,43.7237441 18.32,42.92 L20.23,42.92" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
-                <line x1="8.72" y1="38.27" x2="21.93" y2="38.27" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="15.32" y1="33.36" x2="15.32" y2="20.79" id="Path" stroke-linejoin="round"></line>
-                <path d="M15.25,20.5 L11.07,16.56 M15.31,20.5 L19.5,16.59" id="Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10.41,42.92 L12.32,42.92 C13.1113286,43.7237441 14.1920791,44.1763413 15.32,44.1763413 C16.4479209,44.1763413 17.5286714,43.7237441 18.32,42.92 L20.23,42.92" id="Path" stroke-linecap="round" strokeLinejoin="round"></path>
+                <line x1="8.72" y1="38.27" x2="21.93" y2="38.27" id="Path" stroke-linecap="round" strokeLinejoin="round"></line>
+                <line x1="15.32" y1="33.36" x2="15.32" y2="20.79" id="Path" strokeLinejoin="round"></line>
+                <path d="M15.25,20.5 L11.07,16.56 M15.31,20.5 L19.5,16.59" id="Shape" stroke-linecap="round" strokeLinejoin="round"></path>
             </g>
-            <g id="Rays" transform="translate(0.580000, 0.170000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <g id="Rays" transform="translate(0.580000, 0.170000)" stroke="#FFFFFF" stroke-linecap="round" strokeLinejoin="round" stroke-width="1.5">
                 <line x1="58.15" y1="32.12" x2="0" y2="32.12" id="Path"></line>
                 <line x1="110.55" y1="32.1" x2="168.7" y2="32.1" id="Path"></line>
                 <line x1="104.67" y1="17.81" x2="125.76" y2="0" id="Path"></line>

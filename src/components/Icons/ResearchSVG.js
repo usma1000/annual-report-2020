@@ -13,15 +13,15 @@ const ResearchSVG = () => (
     <g
       id="Artboard"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g id="Research" transform="translate(1.000000, 1.000000)">
         <g
           id="Group"
           transform="translate(30.000000, 8.000000)"
-          fill-rule="nonzero"
+          fillRule="nonzero"
         >
           <path
             d="M58.11,115.98 C81.3783072,115.979994 102.354713,101.961364 111.255367,80.4627023 C120.156021,58.9640402 115.227518,34.2205273 98.7686186,17.7730734 C82.309719,1.32561941 57.5627836,-3.58566937 36.0703185,5.32993835 C14.5778533,14.2455461 0.57381898,35.2316985 0.589985993,58.5 C0.589985993,90.2674188 26.3425812,116.02 58.11,116.02"
@@ -38,18 +38,18 @@ const ResearchSVG = () => (
           id="Bulb"
           transform="translate(70.000000, 17.000000)"
           stroke="#FFFFFF"
-          stroke-width="2"
+          strokeWidth="2"
         >
           <path
             d="M9.62,33.63 L21.01,33.63 C21.62,29.63 23.6,27.77 25.7,25.79 C26.31,25.22 26.95,24.62 27.54,23.98 C29.45,21.71 30.27,19.19 30.27,15.52 C30.0603703,7.41665412 23.4310569,0.956619968 15.325,0.956619968 C7.21894306,0.956619968 0.589629664,7.41665412 0.38,15.52 C0.26851566,18.5559314 1.22380959,21.5350332 3.08,23.94 C3.7,24.62 4.34,25.22 4.96,25.81 C6.37827907,26.9982499 7.57653,28.4266733 8.5,30.03"
             id="Path"
-            stroke-linecap="round"
+            strokeLinecap="round"
           ></path>
           <path
             d="M10.41,42.92 L12.32,42.92 C13.1113286,43.7237441 14.1920791,44.1763413 15.32,44.1763413 C16.4479209,44.1763413 17.5286714,43.7237441 18.32,42.92 L20.23,42.92"
             id="Path"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
           <line
             x1="8.72"
@@ -57,8 +57,8 @@ const ResearchSVG = () => (
             x2="21.93"
             y2="38.27"
             id="Path"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></line>
           <line
             x1="15.32"
@@ -66,22 +66,22 @@ const ResearchSVG = () => (
             x2="15.32"
             y2="20.79"
             id="Path"
-            stroke-linejoin="round"
+            strokeLinejoin="round"
           ></line>
           <path
             d="M15.25,20.5 L11.07,16.56 M15.31,20.5 L19.5,16.59"
             id="Shape"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
         </g>
         <g
           id="Rays"
           transform="translate(0.580000, 0.170000)"
           stroke="#FFFFFF"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
         >
           <line
             className="pathOffset"
@@ -144,7 +144,7 @@ const ResearchSVG = () => (
           id="Face"
           transform="translate(55.000000, 56.000000)"
           fill="#0F070C"
-          fill-rule="nonzero"
+          fillRule="nonzero"
         >
           <path d="M64.81,11.14 C64.1220653,7.26093828 62.7471642,3.53583701 60.75,0.14 L1.17,8.97 C0.514474964,11.5864333 0.178690095,14.2727123 0.17,16.97 C0.17,17.14 0.17,17.32 0.17,17.5 C0.17,18.33 0.17,19.15 0.29,19.95 C0.44,21.95 0.7,24.2 0.97,26.62 C1.03,27.14 1.09,27.67 1.15,28.21 C1.70418528,32.6633448 2.02129916,37.1429957 2.1,41.63 L2.1,68.93 L40.32,68.93 L40.32,61.58 C40.3089061,58.318235 42.9382905,55.6620202 46.2,55.64 L56.9,55.64 C59.6789114,55.6070687 61.9111797,53.3390841 61.9,50.56 L61.9,34.56 L67.74,32.64 L65.15,13.73 C65.06,12.85 64.94,11.97 64.79,11.11"></path>
         </g>

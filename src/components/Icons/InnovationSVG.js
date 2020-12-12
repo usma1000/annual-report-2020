@@ -14,9 +14,9 @@ const InnovationSVG = () => (
     <g
       id="Artboard"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g id="Innovation" transform="translate(33.000000, 9.000000)">
         <path
