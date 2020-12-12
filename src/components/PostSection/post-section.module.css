@@ -15,7 +15,14 @@
   margin: 10em 0;
 }
 
+.icon {
+  flex: 1;
+  max-width: 20vw;
+  margin-right: 40px;
+}
+
 .textBox {
+  flex: 2;
   border: 1px solid #c1cd24;
   padding: 2em;
   position: relative;
@@ -26,16 +33,18 @@
   bottom: 0;
   right: 0;
   padding: 16px 30px;
-  background-color: black;
   border: 1px solid #c1cd24;
   transform: translate(20px, 50%);
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  background: linear-gradient(to left, black 50%, #c1cd24 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
 }
 
 .button:hover {
-  background-color: #c1cd24;
+  background-position: left bottom;
   color: black;
 }

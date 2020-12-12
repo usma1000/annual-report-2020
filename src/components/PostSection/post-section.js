@@ -6,12 +6,14 @@ import styles from "./post-section.module.css";
 const PostSection = ({ headline, children, icon, url, linkText }) => {
   return (
     <div className={styles.flex}>
-      <Icon icon={icon} alt={headline} />
+      <div className={styles.icon}>
+        <Icon icon={icon} alt={headline} />
+      </div>
       <div className={styles.textBox}>
         <h2 className={styles.headline}>{headline}</h2>
         <div>{children}</div>
         <Link to={url} className={styles.button}>
-          {linkText}
+          {linkText} >
         </Link>
       </div>
     </div>

@@ -36,9 +36,8 @@ a {
 }
 
 .wrapper {
-  width: calc(100% - 10vmin);
+  width: calc(100% - 10vmax);
   margin: 0 auto;
-  padding: 5vmin 0;
   color: #ddd;
 }
 
@@ -80,4 +79,79 @@ a {
 
 .list-inline li {
   display: inline-block;
+}
+
+.pathOffset {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: dash 3s ease infinite;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  10% {
+    stroke-dashoffset: 100;
+  }
+  30% {
+    stroke-dashoffset: 0;
+  }
+  60% {
+    stroke-dashoffset: 0;
+  }
+  80% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+.leafRotate {
+  transform: rotateZ(0deg);
+  transform-origin: 32% 40%;
+  animation: leafRotation 3s ease infinite;
+}
+
+@keyframes leafRotation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(0deg);
+  }
+  30% {
+    transform: rotateZ(-10deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+  60% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.squiggle {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: squiggleDash 6s ease infinite;
+}
+
+@keyframes squiggleDash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  20% {
+    stroke-dashoffset: 0;
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1000;
+  }
 }

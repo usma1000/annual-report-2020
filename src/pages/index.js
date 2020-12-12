@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet";
 import Hero from "../components/Hero/hero";
 import Layout from "../components/layout";
 import PostSection from "../components/PostSection/post-section";
-import communityIcon from "../components/Icons/Community.svg";
-import researchIcon from "../components/Icons/Research.svg";
-import innovationIcon from "../components/Icons/Innovation.svg";
+import CommunitySVG from "../components/Icons/CommunitySVG.js";
+import ResearchSVG from "../components/Icons/ResearchSVG";
+import InnovationSVG from "../components/Icons/InnovationSVG.js";
 
 class RootIndex extends React.Component {
   render() {
@@ -16,10 +16,10 @@ class RootIndex extends React.Component {
           <Hero>Advancing Together</Hero>
           <div className="wrapper">
             <PostSection
-              icon={innovationIcon}
+              icon={<InnovationSVG />}
               headline="Innovation"
               url="/innovation"
-              linkText="Read More >>"
+              linkText="Read More"
             >
               Our faculty, staff and students know how to navigate change; in
               fact, they excel at it. In labs and classrooms—on campus and
@@ -28,10 +28,10 @@ class RootIndex extends React.Component {
               tomorrow’s potential challenges.
             </PostSection>
             <PostSection
-              icon={researchIcon}
+              icon={<ResearchSVG />}
               headline="Research"
               url="/research"
-              linkText="Read More >>"
+              linkText="Read More"
             >
               At Case Western Reserve, we aren’t scared of the unknown. We see
               it as an opportunity—to understand, discover, find solutions and
@@ -40,10 +40,10 @@ class RootIndex extends React.Component {
               students truly think beyond the possible.
             </PostSection>
             <PostSection
-              icon={communityIcon}
+              icon={<CommunitySVG />}
               headline="Community"
               url="/community"
-              linkText="Read More >>"
+              linkText="Read More"
             >
               In a time marked by separation, our faculty, staff and students
               joined together—often from a distance—to show their commitment to
