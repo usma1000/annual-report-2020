@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding: 1vmin 5vw;
   color: #888;
   position: relative;

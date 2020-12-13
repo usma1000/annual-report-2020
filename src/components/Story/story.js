@@ -8,14 +8,10 @@ const Story = ({ node }) => {
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
-  const fade = useSpring({ opacity: inView ? 1 : 0, from: { opacity: 0 } });
-  const inLeft = useSpring({
-    transform: "translateX(0)",
-    from: { transform: "translateX(-50vh)" },
-  });
+  const fade = useSpring({ opacity: inView ? 0.8 : 0, from: { opacity: 0 } });
   return (
     <div className={styles.container}>
-      <animated.div ref={ref} style={inLeft} className={styles.story}>
+      <div ref={ref} className={styles.story}>
         <h1 className={styles.title}>{node.title}</h1>
         <div
           dangerouslySetInnerHTML={{
@@ -33,10 +29,29 @@ const Story = ({ node }) => {
             <cite>{node.quoteAuthor && node.quoteAuthor}</cite>
           </blockquote>
         )}
-      </animated.div>
+        {node.dailyLink && (
+          <a
+            href={node.dailyLink}
+            className={styles.button}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read More in The Daily
+          </a>
+        )}
+      </div>
       <animated.div style={fade} className={styles.img}>
         <Img alt={node.title} fluid={node.heroImage.fluid} />
       </animated.div>
+      {node.stats && (
+        <animated.div
+          style={fade}
+          className={styles.stats}
+          dangerouslySetInnerHTML={{
+            __html: node.stats.childMarkdownRemark.html,
+          }}
+        />
+      )}
     </div>
   );
 };

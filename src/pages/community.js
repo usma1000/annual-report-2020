@@ -31,7 +31,13 @@ export const pageQuery = graphql`
         node {
           title
           slug
+          dailyLink
           pullquote {
+            childMarkdownRemark {
+              html
+            }
+          }
+          stats {
             childMarkdownRemark {
               html
             }

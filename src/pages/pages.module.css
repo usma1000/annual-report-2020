@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container > p {
+  width: 25%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.container > p > em {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.columns {
+  column-count: 3;
+  column-gap: 2em;
+  text-align: justify;
+  margin: 2em 0;
+}
+
+.presidentTitle {
+  color: #c1cd24;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.scott {
+  max-width: 40%;
+  text-align: right;
+}

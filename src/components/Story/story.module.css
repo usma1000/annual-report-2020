@@ -10,12 +10,22 @@
 }
 
 .img {
-  width: 50vmax;
+  width: 60vmax;
   position: fixed;
   z-index: 1;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+
+.img:after {
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: inset black 0px 0px 20vw 7vw;
+  position: absolute;
 }
 
 .story {
@@ -28,29 +38,19 @@
   z-index: 2;
 }
 
-.category {
-  font-weight: 900;
-  font-size: 1.2em;
-  color: #c1cd24;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
 .title {
   font-weight: 600;
   font-size: 2em;
-}
-
-.category,
-.title {
   margin: 0;
   line-height: 1.2;
 }
 
 blockquote {
   text-align: center;
-  margin-top: 2em;
+  margin: 2em 0;
+  padding-bottom: 24px;
   border-top: 1px solid rgb(185, 185, 185);
+  border-bottom: 1px solid rgb(185, 185, 185);
 }
 
 .quote {
@@ -66,4 +66,45 @@ blockquote {
 
 cite:before {
   content: "— ";
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 16px 30px;
+  border: 1px solid #c1cd24;
+  transform: translate(20px, 50%);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background: linear-gradient(to left, black 50%, #c1cd24 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.button:hover {
+  background-position: left bottom;
+  color: black;
+}
+
+.stats {
+  z-index: 10;
+  font-size: 18px;
+  text-align: right;
+  position: fixed;
+  right: 2vw;
+  top: 10vh;
+  width: 300px;
+  text-shadow: black 2px 2px 4px;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+.stats strong {
+  font-size: 2em;
+  display: block;
+  color: #c1cd24;
+  font-style: normal;
 }
