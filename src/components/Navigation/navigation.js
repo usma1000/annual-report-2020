@@ -31,6 +31,9 @@ const Navigation = () => {
           <li className={styles.navigationItem}>
             <Link to="/presidents-letter">President's Letter</Link>
           </li>
+          <li className={styles.navigationItem}>
+            <Link to="/financials">Financials</Link>
+          </li>
         </ul>
       </nav>
     </>
