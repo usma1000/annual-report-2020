@@ -13,6 +13,7 @@
   display: flex;
   align-items: flex-start;
   margin: 10em 0;
+  position: relative;
 }
 
 .icon {
@@ -26,6 +27,7 @@
   border: 1px solid #c1cd24;
   padding: 2em;
   position: relative;
+  background-color: #000000e5;
 }
 
 .button {
@@ -39,12 +41,12 @@
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  background: linear-gradient(to left, black 50%, #c1cd24 50%);
+  background: linear-gradient(to left, #c1cd24 50%, black 50%);
   background-size: 200% 100%;
-  background-position: right bottom;
+  background-position: left bottom;
 }
 
 .button:hover {
-  background-position: left bottom;
+  background-position: right bottom;
   color: black;
 }

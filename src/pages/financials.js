@@ -114,7 +114,7 @@ class Financials extends React.Component {
                   <table className={styles.table}>
                     <thead>
                       <tr>
-                        <th></th>
+                        <th> </th>
                         <th colSpan="2">
                           <strong>FY19</strong>
                           <em>

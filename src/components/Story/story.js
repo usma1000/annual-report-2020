@@ -8,7 +8,7 @@ const Story = ({ node }) => {
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
-  const fade = useSpring({ opacity: inView ? 0.8 : 0, from: { opacity: 0 } });
+  const fade = useSpring({ opacity: inView ? 1 : 0, from: { opacity: 0 } });
   return (
     <div className={styles.container}>
       <div ref={ref} className={styles.story}>

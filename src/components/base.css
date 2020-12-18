@@ -36,9 +36,9 @@ a {
 }
 
 .wrapper {
-  width: calc(100% - 10vmax);
-  margin: 0 auto;
   color: #ddd;
+  overflow: hidden;
+  padding: 0 5vmax;
 }
 
 /**

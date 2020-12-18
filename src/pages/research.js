@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Story from "../components/Story/story";
-// import Hero from "../components/Hero/hero";
+import Hero from "../components/Hero/hero";
 
 const Research = (props) => {
   const posts = props.data.allContentfulStory.edges;
@@ -11,7 +11,7 @@ const Research = (props) => {
     <Layout location={props.location}>
       <div>
         <Helmet title="Research | Case Western Reserve University" />
-        {/* <Hero>Research</Hero> */}
+        <Hero>Research</Hero>
         <div className="wrapper">
           {posts.map(({ node }) => (
             <Story node={node} />

@@ -21,6 +21,7 @@ const fallbackMesh = () => (
 const canvasStyle = {
   background: "transparent",
   height: "100vh",
+  minHeight: "700px",
   position: "absolute",
   top: "0",
   left: "0",

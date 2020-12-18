@@ -13,7 +13,11 @@ class RootIndex extends React.Component {
       <Layout location={this.props.location}>
         <div>
           <Helmet title="Advancing Together | Case Western Reserve University" />
-          <Hero>Advancing Together</Hero>
+          <Hero mesh>
+            Advancing
+            <br />
+            Together
+          </Hero>
           <div className="wrapper">
             <PostSection
               icon={<InnovationSVG />}

@@ -9,10 +9,14 @@
 - Page background animations
 - Story Hero Sections
 - Homepage Hero Section
-- Leadership Page
+- Videos
+- Flip button hovers
+- Stats accessibility
+  - Or expand out in their own box below image
 
-## Waiting for Content
+## After Showing
 
+- Leadership Page Styling
 - Finances
   - How many years?
   - Random word Enrollment??
@@ -22,3 +26,4 @@
 - Double check all Daily links
 - Check accessibility
 - Read More links
+- Stats for "To Provide Support Amid a Pandemic" too long
