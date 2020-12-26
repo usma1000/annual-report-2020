@@ -12,7 +12,7 @@ const Community = (props) => {
       <div>
         <Helmet title="Community | Case Western Reserve University" />
         <Hero>Community</Hero>
-        <div className="wrapper">
+        <div className="wrapper pattern1">
           {posts.map(({ node }) => (
             <Story key={node.slug} node={node} />
           ))}

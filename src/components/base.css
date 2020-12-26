@@ -41,6 +41,10 @@ a {
   padding: 0 5vmax;
 }
 
+.pattern1 {
+  background: black url(../../static/pattern.png);
+}
+
 /**
  * article grid
  */

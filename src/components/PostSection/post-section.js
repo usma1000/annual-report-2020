@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import Icon from "../Icons/Icon";
 import styles from "./post-section.module.css";
@@ -7,6 +7,9 @@ import { useSpring, animated } from "react-spring";
 import WaveSVG from "../Icons/WaveSVG";
 
 const PostSection = ({ headline, children, icon, url, linkText }) => {
+  const [hovered, setHovered] = useState(false);
+  const toggleHover = () => setHovered(!hovered);
+
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
@@ -27,10 +30,14 @@ const PostSection = ({ headline, children, icon, url, linkText }) => {
   return (
     <div ref={ref} className={styles.flex}>
       <animated.div style={fade} className={styles.icon}>
-        <WaveSVG />
+        <WaveSVG hovered={hovered} key={hovered} />
         <animated.div
+          onMouseEnter={toggleHover}
           onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-          onMouseLeave={() => set({ xys: [0, 0, 1] })}
+          onMouseLeave={() => {
+            set({ xys: [0, 0, 1] });
+            toggleHover();
+          }}
           style={{ transform: props.xys.interpolate(trans) }}
         >
           <Link to={url}>
@@ -43,7 +50,12 @@ const PostSection = ({ headline, children, icon, url, linkText }) => {
           {headline}
         </animated.h2>
         <div>{children}</div>
-        <Link to={url} className={styles.button}>
+        <Link
+          to={url}
+          className={styles.button}
+          onMouseEnter={toggleHover}
+          onMouseLeave={toggleHover}
+        >
           {linkText}
         </Link>
       </div>

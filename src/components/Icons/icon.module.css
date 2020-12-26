@@ -12,8 +12,11 @@
   z-index: 0;
 }
 
-.wave {
+.waveUnhovered {
   animation: move-forever 15s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.waveHovered {
+  animation: move-forever 1s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 
 @keyframes move-forever {
