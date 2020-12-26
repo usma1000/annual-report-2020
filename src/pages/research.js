@@ -39,7 +39,7 @@ export const pageQuery = graphql`
           }
           stats {
             childMarkdownRemark {
-              html
+              htmlAst
             }
           }
           quoteAuthor

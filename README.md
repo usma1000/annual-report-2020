@@ -10,9 +10,6 @@
 - Story Hero Sections
 - Homepage Hero Section
 - Videos
-- Flip button hovers
-- Stats accessibility
-  - Or expand out in their own box below image
 
 ## After Showing
 

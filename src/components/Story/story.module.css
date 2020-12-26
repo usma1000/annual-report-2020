@@ -86,21 +86,18 @@ cite:before {
 }
 
 .stats {
-  z-index: 10;
   font-size: 18px;
-  text-align: right;
-  position: fixed;
-  right: 2vw;
-  top: 10vh;
-  width: 300px;
   text-shadow: black 2px 2px 4px;
   line-height: 1.2;
   font-style: italic;
 }
 
+.stats > div > div {
+  margin-bottom: 1em;
+}
+
 .stats strong {
   font-size: 2em;
-  display: block;
   color: #c1cd24;
   font-style: normal;
 }

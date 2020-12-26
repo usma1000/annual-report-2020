@@ -3,8 +3,15 @@ import { useSpring, animated } from "react-spring";
 import Img from "gatsby-image";
 import styles from "./story.module.css";
 import { useInView } from "react-intersection-observer";
+import rehypeReact from "rehype-react";
+import Stats from "../Stats/stats";
 
 const Story = ({ node }) => {
+  const renderAst = new rehypeReact({
+    createElement: React.createElement,
+    components: { counter: Stats },
+  }).Compiler;
+
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
@@ -29,6 +36,11 @@ const Story = ({ node }) => {
             <cite>{node.quoteAuthor && node.quoteAuthor}</cite>
           </blockquote>
         )}
+        {node.stats && (
+          <div className={styles.stats}>
+            {renderAst(node.stats.childMarkdownRemark.htmlAst)}
+          </div>
+        )}
         {node.dailyLink && (
           <a
             href={node.dailyLink}
@@ -43,15 +55,6 @@ const Story = ({ node }) => {
       <animated.div style={fade} className={styles.img}>
         <Img alt={node.title} fluid={node.heroImage.fluid} />
       </animated.div>
-      {node.stats && (
-        <animated.div
-          style={fade}
-          className={styles.stats}
-          dangerouslySetInnerHTML={{
-            __html: node.stats.childMarkdownRemark.html,
-          }}
-        />
-      )}
     </div>
   );
 };

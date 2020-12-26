@@ -29,7 +29,12 @@ module.exports = {
   },
   pathPrefix: "/test/anand/2020/public",
   plugins: [
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: ["gatsby-remark-component"],
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",

@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./icon.module.css";
 
 const WaveSVG = ({ hovered }) => {
-  const style = hovered ? styles.waveHovered : styles.waveUnhovered;
+  const motion = hovered ? styles.waveHovered : styles.waveUnhovered;
+  const color = hovered ? "#FFFFFF" : "#FFFFFFAA";
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,8 +19,8 @@ const WaveSVG = ({ hovered }) => {
           d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
         ></path>
       </defs>
-      <g stroke="#FFFFFF" strokeWidth="1">
-        <use xlinkHref="#gentle-wave" x="48" y="0" className={style}></use>
+      <g stroke={color} strokeWidth="0.75">
+        <use xlinkHref="#gentle-wave" x="48" y="0" className={motion}></use>
       </g>
     </svg>
   );
