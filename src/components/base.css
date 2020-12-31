@@ -41,6 +41,12 @@ a {
   padding: 0 5vmax;
 }
 
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    padding: 0 5vw;
+  }
+}
+
 .pattern1 {
   background: black url(../../static/pattern.png);
 }

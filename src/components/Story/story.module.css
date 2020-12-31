@@ -32,6 +32,7 @@
   border: 1px solid #c1cd24;
   position: relative;
   z-index: 2;
+  box-sizing: border-box;
 }
 
 .title {
@@ -100,4 +101,36 @@ cite:before {
   font-size: 2em;
   color: #c1cd24;
   font-style: normal;
+}
+
+.img-mobile {
+  display: none;
+  margin: 5vw 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .story {
+    width: 100%;
+    min-width: auto;
+    padding: 5vw;
+    margin-bottom: 10vw;
+  }
+  .img-mobile {
+    display: block;
+  }
+  .img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .title {
+    font-size: 1.5em;
+  }
+  .quote {
+    font-style: 1em;
+  }
 }

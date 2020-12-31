@@ -20,6 +20,9 @@ const Story = ({ node }) => {
     <div className={styles.container}>
       <div ref={ref} className={styles.story}>
         <h1 className={styles.title}>{node.title}</h1>
+        <div className={styles.imgMobile}>
+          <Img alt={node.title} fluid={node.heroImage.fluid} />
+        </div>
         <div
           dangerouslySetInnerHTML={{
             __html: node.body.childMarkdownRemark.html,
