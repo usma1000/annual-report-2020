@@ -103,3 +103,13 @@
 .table tfoot {
   font-weight: 600;
 }
+
+@media only screen and (max-width: 768px) {
+  .columns {
+    column-count: 1;
+    text-align: left;
+  }
+  .presidentTitle {
+    line-height: 1;
+  }
+}

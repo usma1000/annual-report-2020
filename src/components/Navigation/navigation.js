@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import logo from "./cwrulogo.svg";
 import styles from "./navigation.module.css";
 
 const Navigation = () => {
+  const [open, setOpen] = useState(false);
+  const toggleClass = open ? styles.open : styles.closed;
+
   return (
     <>
       <nav role="navigation" className={styles.container}>
@@ -12,7 +15,16 @@ const Navigation = () => {
             <img alt="CWRU Logo" src={logo} />
           </a>
         </div>
-        <ul className={styles.navigation}>
+        <div
+          className={`${styles.hamburger} ${toggleClass}`}
+          onClick={() => setOpen(!open)}
+        >
+          <div className={styles.hamburgerBox}>
+            <div className={styles.hamburgerInner}></div>
+          </div>
+        </div>
+        <div className={styles.break}></div>
+        <ul className={`${styles.navigation} ${toggleClass}`}>
           <li className={styles.navigationItem}>
             <Link to="/">Home</Link>
           </li>

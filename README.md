@@ -1,6 +1,7 @@
 # TODO
 
 - Responsive
+  - Menu tap animation is wrong
 - Upload correct images
 - Size images properly
 - 3D model update
@@ -10,6 +11,7 @@
 - Story Hero Sections
 - Homepage Hero Section
 - Videos
+- President's Letter
 
 ## After Showing
 
@@ -17,7 +19,6 @@
 - Finances
   - How many years?
   - Random word Enrollment??
-- President's Letter
 - Order of stories?
 - Double check all Stats (most said possible)
 - Double check all Daily links
