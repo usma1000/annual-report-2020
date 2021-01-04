@@ -31,6 +31,7 @@ export const pageQuery = graphql`
         node {
           title
           slug
+          videoLink
           dailyLink
           pullquote {
             childMarkdownRemark {

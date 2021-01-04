@@ -27,7 +27,7 @@
 .story {
   padding: 10vh 5vw;
   width: 30vw;
-  min-width: 430px;
+  min-width: 550px;
   background-color: black;
   border: 1px solid #c1cd24;
   position: relative;
@@ -84,6 +84,13 @@ cite:before {
 .button:hover {
   background-position: left bottom;
   color: black;
+}
+
+.buttonLeft {
+  composes: button;
+  transform: translate(-20px, 50%);
+  left: 0;
+  right: auto;
 }
 
 .stats {

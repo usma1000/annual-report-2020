@@ -44,6 +44,17 @@ const Story = ({ node }) => {
             {renderAst(node.stats.childMarkdownRemark.htmlAst)}
           </div>
         )}
+
+        {node.videoLink && (
+          <a
+            href={node.videoLink}
+            className={styles.buttonLeft}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See Video
+          </a>
+        )}
         {node.dailyLink && (
           <a
             href={node.dailyLink}

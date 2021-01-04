@@ -2,6 +2,7 @@
 
 - Responsive
   - Menu tap animation is wrong
+  - Leadership
 - Upload correct images
 - Size images properly
 - 3D model update
@@ -15,6 +16,7 @@
 
 ## After Showing
 
+- Metadata
 - Leadership Page Styling
 - Finances
   - How many years?

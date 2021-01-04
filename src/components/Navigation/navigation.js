@@ -18,6 +18,9 @@ const Navigation = () => {
         <div
           className={`${styles.hamburger} ${toggleClass}`}
           onClick={() => setOpen(!open)}
+          onKeyDown={() => setOpen(!open)}
+          tabindex="0"
+          role="button"
         >
           <div className={styles.hamburgerBox}>
             <div className={styles.hamburgerInner}></div>
