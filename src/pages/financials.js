@@ -9,7 +9,7 @@ class Financials extends React.Component {
     return (
       <Layout location={this.props.location}>
         <div>
-          <Helmet title="Financials | Case Western Reserve University" />
+          <Helmet title="Financials | Advancing Together | Case Western Reserve University" />
           <div className="wrapper">
             <div>
               <h2 className={styles.h2}>

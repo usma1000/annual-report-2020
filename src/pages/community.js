@@ -10,7 +10,7 @@ const Community = (props) => {
   return (
     <Layout location={props.location}>
       <div>
-        <Helmet title="Community | Case Western Reserve University" />
+        <Helmet title="Community | Advancing Together  | Case Western Reserve University" />
         <Hero>Community</Hero>
         <div className="wrapper pattern1">
           {posts.map(({ node }) => (
@@ -32,7 +32,6 @@ export const pageQuery = graphql`
           title
           slug
           videoLink
-          dailyLink
           pullquote {
             childMarkdownRemark {
               html

@@ -48,21 +48,11 @@ const Story = ({ node }) => {
         {node.videoLink && (
           <a
             href={node.videoLink}
-            className={styles.buttonLeft}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See Video
-          </a>
-        )}
-        {node.dailyLink && (
-          <a
-            href={node.dailyLink}
             className={styles.button}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read More in The Daily
+            Watch Their Work
           </a>
         )}
       </div>

@@ -8,7 +8,7 @@ class Trustees extends React.Component {
     return (
       <Layout location={this.props.location}>
         <div>
-          <Helmet title="University Trustees and Leadership | Case Western Reserve University" />
+          <Helmet title="University Trustees and Leadership | Advancing Together | Case Western Reserve University" />
           <div className="wrapper">
             <h1 className="section-headline">University Trustees</h1>
             <div className={styles.container}>

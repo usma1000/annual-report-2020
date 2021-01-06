@@ -8,7 +8,7 @@ class President extends React.Component {
     return (
       <Layout location={this.props.location}>
         <div>
-          <Helmet title="Letter from the Interim President | Case Western Reserve University" />
+          <Helmet title="Letter from the Interim President | Advancing Together | Case Western Reserve University" />
           <div className="wrapper">
             <div class={styles.columns}>
               <h1 className={styles.presidentTitle}>
@@ -17,7 +17,7 @@ class President extends React.Component {
               <div className={styles.scott}>
                 <img
                   src="/public/scott-cowan.jpg"
-                  alt="interim president scott cowan"
+                  alt="Interim President Scott Cowen"
                 />
               </div>
               <p>

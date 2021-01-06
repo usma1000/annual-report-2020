@@ -10,7 +10,7 @@ const Research = (props) => {
   return (
     <Layout location={props.location}>
       <div>
-        <Helmet title="Research | Case Western Reserve University" />
+        <Helmet title="Research | Advancing Together | Case Western Reserve University" />
         <Hero>Research</Hero>
         <div className="wrapper">
           {posts.map(({ node }) => (
@@ -32,7 +32,6 @@ export const pageQuery = graphql`
           title
           slug
           videoLink
-          dailyLink
           pullquote {
             childMarkdownRemark {
               html
