@@ -21,7 +21,11 @@ const PostSection = ({ headline, children, icon, url, linkText }) => {
   const trans = (x, y, s) =>
     `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
-  const fade = useSpring({ opacity: inView ? 1 : 0, from: { opacity: 0 } });
+  const fade = useSpring({ opacity: inView ? 1 : 0 });
+  const upFade = useSpring({
+    top: inView ? "-2.5em" : "-1.5em",
+    opacity: inView ? 1 : 0,
+  });
 
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
@@ -46,7 +50,7 @@ const PostSection = ({ headline, children, icon, url, linkText }) => {
         </animated.div>
       </animated.div>
       <div className={styles.textBox}>
-        <animated.h2 style={fade} className={styles.headline}>
+        <animated.h2 style={upFade} className={styles.headline}>
           {headline}
         </animated.h2>
         <div>{children}</div>

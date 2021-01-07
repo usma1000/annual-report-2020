@@ -4,7 +4,6 @@
 - All images look very pixelated—update, please!
 - Homepage changes
   - Add blue header as a way to get CWRU blue in the page...somewhere.
-  - Remove the rotating knot thingy
   - Add the cover image to the top
   - Change the green to white to be more on brand.
   - Need a place in the nav or in the footer to download the PDF

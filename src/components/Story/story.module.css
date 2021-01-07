@@ -3,15 +3,14 @@
   padding: 5vw;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: flex-start;
 }
 
 .img {
-  width: 60vmax;
-  position: fixed;
-  z-index: 1;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  top: 0;
+  width: 100%;
+  position: sticky;
 }
 
 .img:after {

@@ -10,7 +10,7 @@ const Community = (props) => {
   return (
     <Layout location={props.location}>
       <div>
-        <Helmet title="Community | Advancing Together  | Case Western Reserve University" />
+        <Helmet title="Community | Advancing Together | Case Western Reserve University" />
         <Hero>Community</Hero>
         <div className="wrapper pattern1">
           {posts.map(({ node }) => (
@@ -44,7 +44,7 @@ export const pageQuery = graphql`
           }
           quoteAuthor
           heroImage {
-            fluid(maxWidth: 500, background: "rgb:000000") {
+            fluid(maxWidth: 2000, background: "rgb:000000") {
               ...GatsbyContentfulFluid
             }
           }

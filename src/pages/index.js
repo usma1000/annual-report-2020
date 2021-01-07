@@ -20,18 +20,6 @@ class RootIndex extends React.Component {
           </Hero>
           <div className="wrapper">
             <PostSection
-              icon={<InnovationSVG />}
-              headline="Innovation"
-              url="/innovation"
-              linkText="See Our Innovative Approaches"
-            >
-              Our faculty, staff and students know how to navigate change; in
-              fact, they excel at it. In labs and classrooms—on campus and
-              wherever remote learning and work take them—they work together to
-              develop creative solutions to today’s pressing problems and
-              tomorrow’s potential challenges.
-            </PostSection>
-            <PostSection
               icon={<ResearchSVG />}
               headline="Research"
               url="/research"
@@ -42,6 +30,18 @@ class RootIndex extends React.Component {
               even break new ground. By tackling tough questions with colleagues
               across the campus, city, state and beyond, our faculty, staff and
               students truly think beyond the possible.
+            </PostSection>
+            <PostSection
+              icon={<InnovationSVG />}
+              headline="Innovation"
+              url="/innovation"
+              linkText="See Our Innovative Approaches"
+            >
+              Our faculty, staff and students know how to navigate change; in
+              fact, they excel at it. In labs and classrooms—on campus and
+              wherever remote learning and work take them—they work together to
+              develop creative solutions to today’s pressing problems and
+              tomorrow’s potential challenges.
             </PostSection>
             <PostSection
               icon={<CommunitySVG />}

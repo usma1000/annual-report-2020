@@ -44,7 +44,7 @@ export const pageQuery = graphql`
           }
           quoteAuthor
           heroImage {
-            fluid(maxWidth: 500, background: "rgb:000000") {
+            fluid(maxWidth: 2000, background: "rgb:000000") {
               ...GatsbyContentfulFluid
             }
           }

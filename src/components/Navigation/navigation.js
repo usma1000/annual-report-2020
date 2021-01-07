@@ -32,10 +32,10 @@ const Navigation = () => {
             <Link to="/">Home</Link>
           </li>
           <li className={styles.navigationItem}>
-            <Link to="/innovation">Innovation</Link>
+            <Link to="/research">Research</Link>
           </li>
           <li className={styles.navigationItem}>
-            <Link to="/research">Research</Link>
+            <Link to="/innovation">Innovation</Link>
           </li>
           <li className={styles.navigationItem}>
             <Link to="/community">Community</Link>

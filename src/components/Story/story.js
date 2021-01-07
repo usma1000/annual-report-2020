@@ -15,11 +15,14 @@ const Story = ({ node }) => {
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
-  const fade = useSpring({ opacity: inView ? 1 : 0, from: { opacity: 0 } });
+  const fade = useSpring({
+    opacity: inView ? 1 : 0,
+    transform: inView ? "translateX(0)" : "translateX(-10vw)",
+  });
   return (
     <div className={styles.container}>
-      <div ref={ref} className={styles.story}>
-        <h1 className={styles.title}>{node.title}</h1>
+      <div className={styles.story}>
+        <h2 className={styles.title}>{node.title}</h2>
         <div className={styles.imgMobile}>
           <Img alt={node.title} fluid={node.heroImage.fluid} />
         </div>
@@ -56,7 +59,7 @@ const Story = ({ node }) => {
           </a>
         )}
       </div>
-      <animated.div style={fade} className={styles.img}>
+      <animated.div style={fade} ref={ref} className={styles.img}>
         <Img alt={node.title} fluid={node.heroImage.fluid} />
       </animated.div>
     </div>

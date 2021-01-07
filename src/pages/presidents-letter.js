@@ -16,7 +16,7 @@ class President extends React.Component {
               </h1>
               <div className={styles.scott}>
                 <img
-                  src="/public/scott-cowan.jpg"
+                  src="./scott-cowen.jpg"
                   alt="Interim President Scott Cowen"
                 />
               </div>
