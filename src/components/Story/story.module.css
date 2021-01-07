@@ -41,6 +41,14 @@
   line-height: 1.2;
 }
 
+.story h3 {
+  font-weight: 600;
+  font-size: 1.7em;
+  margin-bottom: 0;
+  margin-top: 20px;
+  line-height: 1.2;
+}
+
 blockquote {
   text-align: center;
   margin: 2em 0;
@@ -114,15 +122,25 @@ cite:before {
   margin: 5vw 0;
 }
 
+@media only screen and (max-width: 1100px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .story {
+    width: 80%;
+    min-width: auto;
+    margin: -40px auto 0 auto;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     padding: 0;
   }
   .story {
-    width: 100%;
-    min-width: auto;
     padding: 5vw;
-    margin-bottom: 10vw;
+    margin: 0 auto 10vw auto;
+    background-color: #0a304e;
   }
   .img-mobile {
     display: block;

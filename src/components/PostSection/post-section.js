@@ -22,8 +22,9 @@ const PostSection = ({ headline, children, icon, url, linkText }) => {
     `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
   const fade = useSpring({ opacity: inView ? 1 : 0 });
+  const titleTop = window.innerWidth <= 768 ? "0" : "-2.5em";
   const upFade = useSpring({
-    top: inView ? "-2.5em" : "-1.5em",
+    top: inView ? titleTop : "-1.5em",
     opacity: inView ? 1 : 0,
   });
 

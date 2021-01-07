@@ -3,9 +3,6 @@
 - Update all copy/images to what's in the final PDF, and adjust the order/placement of stories (some switched sections)
 - All images look very pixelated—update, please!
 - Homepage changes
-  - Add blue header as a way to get CWRU blue in the page...somewhere.
-  - Add the cover image to the top
-  - Change the green to white to be more on brand.
   - Need a place in the nav or in the footer to download the PDF
 - Innovation changes
   - Stories should be in the same order as in the book unless there's some reason not to (thinking perhaps this was the order previously)

@@ -26,7 +26,10 @@ export default Research;
 
 export const pageQuery = graphql`
   query ResearchQuery {
-    allContentfulStory(filter: { tags: { eq: "research" } }) {
+    allContentfulStory(
+      filter: { tags: { eq: "research" } }
+      sort: { fields: order }
+    ) {
       edges {
         node {
           title
@@ -44,7 +47,7 @@ export const pageQuery = graphql`
           }
           quoteAuthor
           heroImage {
-            fluid(maxWidth: 2000, background: "rgb:000000") {
+            fluid(maxWidth: 1440, background: "rgb:000000") {
               ...GatsbyContentfulFluid
             }
           }

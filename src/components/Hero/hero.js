@@ -1,10 +1,9 @@
 import React from "react";
-import CanvasMesh from "../3D/CanvasMesh";
 import { useSpring, animated } from "react-spring";
 import styles from "./hero.module.css";
 import img from "./cover.jpg";
 
-export default ({ children, mesh }) => {
+export default ({ children }) => {
   const lineHeight = useSpring({
     lineHeight: 1.65,
     from: { lineHeight: 0.5 },
@@ -17,7 +16,6 @@ export default ({ children, mesh }) => {
       <div className={styles.imgContainer}>
         <img className={styles.img} src={img} alt="students walking" />
       </div>
-      {mesh && <CanvasMesh />}
     </div>
   );
 };
