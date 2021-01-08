@@ -51,30 +51,6 @@ class Financials extends React.Component {
                   </p>
                 </div>
                 <div className={styles.even}>
-                  <h3>Campus</h3>
-                  <p>
-                    <strong>3,511</strong> Faculty (full-time)
-                  </p>
-                  <p>
-                    <strong>3,034</strong> Staff (full- and part-time)
-                  </p>
-                </div>
-                <div className={styles.even}>
-                  <h3>Enrollment (Fall 2020)</h3>
-                  <p>
-                    <strong>5,430</strong> Undergraduate
-                  </p>
-                  <p>
-                    <strong>6,035</strong> Graduate + Professional
-                  </p>
-                  <p>
-                    <strong>50</strong> States represented
-                  </p>
-                  <p>
-                    <strong>89</strong> Countries represented
-                  </p>
-                </div>
-                <div className={styles.even}>
                   <h3>
                     Degrees by School (Undergraduate, Graduate and Professional)
                   </h3>
@@ -102,6 +78,30 @@ class Financials extends React.Component {
                   </p>
                   <p>
                     <strong>654</strong> Weatherhead School of Management
+                  </p>
+                </div>
+                <div className={styles.even}>
+                  <h3>Campus</h3>
+                  <p>
+                    <strong>3,511</strong> Faculty (full-time)
+                  </p>
+                  <p>
+                    <strong>3,034</strong> Staff (full- and part-time)
+                  </p>
+                </div>
+                <div className={styles.even}>
+                  <h3>Enrollment (Fall 2020)</h3>
+                  <p>
+                    <strong>5,430</strong> Undergraduate
+                  </p>
+                  <p>
+                    <strong>6,035</strong> Graduate + Professional
+                  </p>
+                  <p>
+                    <strong>50</strong> States represented
+                  </p>
+                  <p>
+                    <strong>89</strong> Countries represented
                   </p>
                 </div>
               </div>
@@ -220,22 +220,24 @@ class Financials extends React.Component {
               </div>
 
               <h2 className={styles.h2}>2019-20 Giving Highlights</h2>
-              <p>
-                <strong>XXX</strong> undergraduates receiving scholarship
-                support from gifts
-              </p>
-              <p>
-                <strong>14,261</strong> donors, <strong>7,460</strong> of whom
-                are alumni
-              </p>
-              <p>
-                <strong>$48,295,984</strong> raised for scholarships,
-                fellowships, and student aid
-              </p>
-              <p>
-                <strong>$12,500,661</strong> to the annual fund, which provides
-                immediate student-focused support
-              </p>
+              <div className={styles.numberscontainer}>
+                <p>
+                  <strong>914</strong> undergraduates receiving scholarship
+                  support from gifts
+                </p>
+                <p>
+                  <strong>14,261</strong> donors, <strong>7,460</strong> of whom
+                  are alumni
+                </p>
+                <p>
+                  <strong>$48,295,984</strong> raised for scholarships,
+                  fellowships, and student aid
+                </p>
+                <p>
+                  <strong>$12,500,661</strong> to the annual fund, which
+                  provides immediate student-focused support
+                </p>
+              </div>
             </div>
           </div>
         </div>

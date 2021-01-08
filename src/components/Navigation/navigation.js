@@ -40,14 +40,21 @@ const Navigation = () => {
           <li className={styles.navigationItem}>
             <Link to="/community">Community</Link>
           </li>
-          <li className={styles.navigationItem}>
-            <Link to="/university-trustees-and-leadership">Leadership</Link>
-          </li>
-          <li className={styles.navigationItem}>
-            <Link to="/presidents-letter">President's Letter</Link>
-          </li>
-          <li className={styles.navigationItem}>
-            <Link to="/financials">Financials</Link>
+          <li className={styles.more}>
+            <span>More</span>
+            <ul className={styles.submenu}>
+              <li className={styles.navigationItem}>
+                <Link to="/university-trustees-and-leadership">
+                  University Leadership
+                </Link>
+              </li>
+              <li className={styles.navigationItem}>
+                <Link to="/presidents-letter">Interim President's Letter</Link>
+              </li>
+              <li className={styles.navigationItem}>
+                <Link to="/financials">Financials &amp; Numbers</Link>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>

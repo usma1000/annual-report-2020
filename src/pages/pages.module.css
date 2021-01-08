@@ -22,6 +22,7 @@
   padding: 20px;
 }
 
+.numberscontainer strong,
 .container strong {
   font-weight: 600;
   font-size: 1.2em;
