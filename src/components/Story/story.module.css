@@ -93,13 +93,6 @@ cite:before {
   color: black;
 }
 
-.buttonLeft {
-  composes: button;
-  transform: translate(-20px, 50%);
-  left: 0;
-  right: auto;
-}
-
 .stats {
   font-size: 18px;
   text-shadow: black 2px 2px 4px;

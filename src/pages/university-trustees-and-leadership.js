@@ -100,9 +100,18 @@ class Trustees extends React.Component {
               <p>Michael G. Zink</p>
             </div>
             <div>
-              For a listing of the most current trustees, including emeriti,
-              visit <a href="https://case.edu/bot/">case.edu/bot</a>. University
-              Administration as of January 1, 2021
+              <p>
+                <em>
+                  For a listing of the most current trustees, including emeriti,
+                  visit <a href="https://case.edu/bot/">case.edu/bot</a>.
+                </em>
+              </p>
+            </div>
+            <div>
+              <h2 className="section-headline">University Administration</h2>
+              <p>
+                <em>as of January 1, 2021</em>
+              </p>
             </div>
             <div className={styles.container}>
               <p>
