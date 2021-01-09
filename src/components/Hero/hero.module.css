@@ -25,6 +25,11 @@
   height: auto;
 }
 
+.icon {
+  max-width: 30vmax;
+  margin: 0 auto 5vmax auto;
+}
+
 .title {
   font-size: 10em;
   font-weight: 900;
@@ -39,11 +44,8 @@
   .title {
     font-size: 12vmin;
   }
-}
-
-@media only screen and (max-width: 375px) {
   .hero {
     height: auto;
-    min-height: 200px;
+    min-height: unset;
   }
 }

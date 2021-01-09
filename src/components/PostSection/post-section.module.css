@@ -75,5 +75,6 @@
     transform: translate(0, 100%);
     text-align: center;
     background: #0a304e;
+    left: 0;
   }
 }

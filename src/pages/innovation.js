@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Story from "../components/Story/story";
 import Hero from "../components/Hero/hero";
+import InnovationSVG from "../components/Icons/InnovationSVG.js";
 
 const Innovation = (props) => {
   const posts = props.data.allContentfulStory.edges;
@@ -11,7 +12,7 @@ const Innovation = (props) => {
     <Layout location={props.location}>
       <div>
         <Helmet title="Innovation | Advancing Together | Case Western Reserve University" />
-        <Hero>Innovation</Hero>
+        <Hero icon={<InnovationSVG />}>Innovation</Hero>
         <div className="wrapper">
           {posts.map(({ node }) => (
             <Story node={node} />

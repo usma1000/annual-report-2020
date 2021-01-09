@@ -3,7 +3,7 @@ import { useSpring, animated } from "react-spring";
 import styles from "./hero.module.css";
 import img from "./cover.jpg";
 
-export default ({ children }) => {
+export default ({ children, home, icon }) => {
   const lineHeight = useSpring({
     lineHeight: 1.65,
     from: { lineHeight: 0.5 },
@@ -13,9 +13,12 @@ export default ({ children }) => {
       <animated.h1 style={lineHeight} className={styles.title}>
         {children}
       </animated.h1>
-      <div className={styles.imgContainer}>
-        <img className={styles.img} src={img} alt="students walking" />
-      </div>
+      {home && (
+        <div className={styles.imgContainer}>
+          <img className={styles.img} src={img} alt="students walking" />
+        </div>
+      )}
+      {icon && <div className={styles.icon}>{icon}</div>}
     </div>
   );
 };

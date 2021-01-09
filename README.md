@@ -1,18 +1,14 @@
-# TODO
+- Adapting to the New (Mixed) Reality should be a separate story and it shouldn't just be the half of the Zoom screen. Can we use a HoloLens image here (but not with multiple students—perhaps what Liz used in the Together magazine, so copying her in here)
+- I don't love the split image of the HEC—Liz, do we possibly have something else that could work here?
 
-- Update all copy/images to what's in the final PDF, and adjust the order/placement of stories (some switched sections)
-- All images look very pixelated—update, please!
-- Innovation changes
-  - Need a photo for Inspiring New Hope
-- Research changes
-  - Update image for Giving a Fair Chance (you'll need to find one—but preferably not callinig one of our student musicians a criminal)
+# After Showing
 
-## After Showing
-
+- Does the blue on black pass color contrast? And the gray in the footer/on the leadership page?
+- Download as a PDF doesn't work (figure that's still being worked on)
 - Correct page backgrounds
 - Page background animations
-- Story Hero Sections
 - Metadata
 - Leadership Page Styling
 - Double check all Stats (most said possible)
 - Check accessibility
+- Hero replace img with gatsby img

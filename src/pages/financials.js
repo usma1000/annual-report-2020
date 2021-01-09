@@ -23,7 +23,7 @@ class Financials extends React.Component {
                 retained surplus.
               </p>
               <h2 className={styles.h2}>
-                Gifts and pledges from private sources
+                Gifts and Pledges From Private Sources
               </h2>
               <Gifts />
               <h2 className={styles.h2}>Degrees + Campus Statistics</h2>

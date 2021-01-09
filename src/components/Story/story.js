@@ -61,6 +61,9 @@ const Story = ({ node }) => {
       </div>
       <animated.div style={fade} ref={ref} className={styles.img}>
         <Img alt={node.title} fluid={node.heroImage.fluid} />
+        {node.photoCredit && (
+          <div className={styles.credit}>{node.photoCredit}</div>
+        )}
       </animated.div>
     </div>
   );

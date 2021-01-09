@@ -27,7 +27,8 @@ module.exports = {
   siteMetadata: {
     title: "Gatsby Contentful starter",
   },
-  pathPrefix: "/test/anand/2020/public",
+  // pathPrefix: "/test/anand/2020/public",
+  pathPrefix: "/advancingtogether",
   plugins: [
     {
       resolve: "gatsby-transformer-remark",

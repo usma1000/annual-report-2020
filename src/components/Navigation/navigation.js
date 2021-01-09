@@ -41,7 +41,7 @@ const Navigation = () => {
             <Link to="/community">Community</Link>
           </li>
           <li className={styles.more}>
-            <span>More</span>
+            <span>More ▼</span>
             <ul className={styles.submenu}>
               <li className={styles.navigationItem}>
                 <Link to="/university-trustees-and-leadership">

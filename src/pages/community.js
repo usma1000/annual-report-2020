@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Story from "../components/Story/story";
 import Hero from "../components/Hero/hero";
+import CommunitySVG from "../components/Icons/CommunitySVG.js";
 
 const Community = (props) => {
   const posts = props.data.allContentfulStory.edges;
@@ -11,7 +12,7 @@ const Community = (props) => {
     <Layout location={props.location}>
       <div>
         <Helmet title="Community | Advancing Together | Case Western Reserve University" />
-        <Hero>Community</Hero>
+        <Hero icon={<CommunitySVG />}>Community</Hero>
         <div className="wrapper pattern1">
           {posts.map(({ node }) => (
             <Story key={node.slug} node={node} />
@@ -34,6 +35,7 @@ export const pageQuery = graphql`
         node {
           title
           slug
+          photoCredit
           videoLink
           pullquote {
             childMarkdownRemark {
