@@ -19,7 +19,7 @@ const Navigation = () => {
           className={`${styles.hamburger} ${toggleClass}`}
           onClick={() => setOpen(!open)}
           onKeyDown={() => setOpen(!open)}
-          tabindex="0"
+          tabIndex="0"
           role="button"
         >
           <div className={styles.hamburgerBox}>
@@ -57,7 +57,7 @@ const Navigation = () => {
                 <Link to="/financials">Financials &amp; Numbers</Link>
               </li>
               <li className={styles.navigationItem}>
-                <a href="case.edu/advancingtogether/annual-report-2020.pdf">
+                <a href="https://case.edu/advancingtogether/annual-report-2020.pdf">
                   Download as PDF
                 </a>
               </li>

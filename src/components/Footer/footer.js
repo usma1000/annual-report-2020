@@ -5,7 +5,7 @@ const Footer = () => (
   <footer className={styles.container}>
     <div>
       Annual Report 2019 - 2020 |{" "}
-      <a href="case.edu/advancingtogether/annual-report-2020.pdf">
+      <a href="https://case.edu/advancingtogether/annual-report-2020.pdf">
         Download as PDF
       </a>
     </div>

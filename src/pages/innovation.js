@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import Story from "../components/Story/story";
 import Hero from "../components/Hero/hero";
 import InnovationSVG from "../components/Icons/InnovationSVG.js";
+import Pattern from "../components/Patterns/Pattern";
+import squares from "../components/Patterns/squaresbkg.svg";
 
 const Innovation = (props) => {
   const posts = props.data.allContentfulStory.edges;
@@ -13,11 +15,11 @@ const Innovation = (props) => {
       <div>
         <Helmet title="Innovation | Advancing Together | Case Western Reserve University" />
         <Hero icon={<InnovationSVG />}>Innovation</Hero>
-        <div className="wrapper">
+        <Pattern pattern={squares}>
           {posts.map(({ node }) => (
             <Story node={node} />
           ))}
-        </div>
+        </Pattern>
       </div>
     </Layout>
   );

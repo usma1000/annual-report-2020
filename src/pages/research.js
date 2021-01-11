@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import Story from "../components/Story/story";
 import Hero from "../components/Hero/hero";
 import ResearchSVG from "../components/Icons/ResearchSVG";
+import Pattern from "../components/Patterns/Pattern";
+import dots from "../components/Patterns/dotsbkg.svg";
 
 const Research = (props) => {
   const posts = props.data.allContentfulStory.edges;
@@ -13,11 +15,11 @@ const Research = (props) => {
       <div>
         <Helmet title="Research | Advancing Together | Case Western Reserve University" />
         <Hero icon={<ResearchSVG />}>Research</Hero>
-        <div className="wrapper">
+        <Pattern pattern={dots}>
           {posts.map(({ node }) => (
             <Story node={node} />
           ))}
-        </div>
+        </Pattern>
       </div>
     </Layout>
   );

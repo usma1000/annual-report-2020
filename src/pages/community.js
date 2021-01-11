@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import Story from "../components/Story/story";
 import Hero from "../components/Hero/hero";
 import CommunitySVG from "../components/Icons/CommunitySVG.js";
+import Pattern from "../components/Patterns/Pattern";
+import waves from "../components/Patterns/wavesbkg.svg";
 
 const Community = (props) => {
   const posts = props.data.allContentfulStory.edges;
@@ -13,11 +15,11 @@ const Community = (props) => {
       <div>
         <Helmet title="Community | Advancing Together | Case Western Reserve University" />
         <Hero icon={<CommunitySVG />}>Community</Hero>
-        <div className="wrapper pattern1">
+        <Pattern pattern={waves}>
           {posts.map(({ node }) => (
             <Story key={node.slug} node={node} />
           ))}
-        </div>
+        </Pattern>
       </div>
     </Layout>
   );
