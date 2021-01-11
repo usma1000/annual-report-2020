@@ -143,12 +143,18 @@ cite:before {
     padding: 5vw;
     margin: 0 auto 10vw auto;
     background-color: #0a304e;
+    width: 100%;
   }
   .img-mobile {
     display: block;
   }
   .img {
     display: none;
+  }
+  .button {
+    position: static;
+    display: block;
+    transform: translate(0, 0);
   }
 }
 

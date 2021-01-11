@@ -109,100 +109,104 @@ class Financials extends React.Component {
               <h2 className={styles.h2}>Research + Technology Highlights</h2>
 
               <div className={styles.container}>
-                <div className={styles.three}>
-                  <h3>Competitive Sponsored Research Projects*</h3>
-                  <table className={styles.table}>
-                    <thead>
-                      <tr>
-                        <th> </th>
-                        <th colSpan="2">
-                          <strong>FY19</strong>
-                          <em>
-                            Projects awarded/amount
-                            <br />
-                            awarded (in millions)
-                          </em>
-                        </th>
-                        <th colSpan="2">
-                          <strong>FY20</strong>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>National Institutes of Health</td>
-                        <td>369</td>
-                        <td>$196.9</td>
-                        <td>464</td>
-                        <td>$217.4</td>
-                      </tr>
-                      <tr>
-                        <td>Department of Defense</td>
-                        <td>27</td>
-                        <td>$10.6</td>
-                        <td>31</td>
-                        <td>$20.1</td>
-                      </tr>
-                      <tr>
-                        <td>National Science Foundation</td>
-                        <td>40</td>
-                        <td>$7.4</td>
-                        <td>52</td>
-                        <td>$8.5</td>
-                      </tr>
-                      <tr>
-                        <td>Department of Energy</td>
-                        <td>11</td>
-                        <td>$7.6</td>
-                        <td>12</td>
-                        <td>$1.6</td>
-                      </tr>
-                      <tr>
-                        <td>NASA</td>
-                        <td>9</td>
-                        <td>$1.6</td>
-                        <td>15</td>
-                        <td>$1.3</td>
-                      </tr>
-                      <tr>
-                        <td>Other Federal</td>
-                        <td>101</td>
-                        <td>$16.4</td>
-                        <td>73</td>
-                        <td>$11.2</td>
-                      </tr>
-                      <tr>
-                        <td>Industry</td>
-                        <td>102</td>
-                        <td>$12.7</td>
-                        <td>123</td>
-                        <td>$16.9</td>
-                      </tr>
-                      <tr>
-                        <td>Nonprofit, Foundations, Associations, Societies</td>
-                        <td>582</td>
-                        <td>$71.1</td>
-                        <td>674</td>
-                        <td>$75.3</td>
-                      </tr>
-                      <tr>
-                        <td>Other Government</td>
-                        <td>46</td>
-                        <td>$7.4</td>
-                        <td>50</td>
-                        <td>$14.9</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <td>Total</td>
-                        <td>1,287</td>
-                        <td>$331.7</td>
-                        <td>1,494</td>
-                        <td>$367.2</td>
-                      </tr>
-                    </tfoot>
-                  </table>
+                <div className={styles.scroll}>
+                  <div className={styles.three}>
+                    <h3>Competitive Sponsored Research Projects*</h3>
+                    <table className={styles.table}>
+                      <thead>
+                        <tr>
+                          <th> </th>
+                          <th colSpan="2">
+                            <strong>FY19</strong>
+                            <em>
+                              Projects awarded/amount
+                              <br />
+                              awarded (in millions)
+                            </em>
+                          </th>
+                          <th colSpan="2">
+                            <strong>FY20</strong>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>National Institutes of Health</td>
+                          <td>369</td>
+                          <td>$196.9</td>
+                          <td>464</td>
+                          <td>$217.4</td>
+                        </tr>
+                        <tr>
+                          <td>Department of Defense</td>
+                          <td>27</td>
+                          <td>$10.6</td>
+                          <td>31</td>
+                          <td>$20.1</td>
+                        </tr>
+                        <tr>
+                          <td>National Science Foundation</td>
+                          <td>40</td>
+                          <td>$7.4</td>
+                          <td>52</td>
+                          <td>$8.5</td>
+                        </tr>
+                        <tr>
+                          <td>Department of Energy</td>
+                          <td>11</td>
+                          <td>$7.6</td>
+                          <td>12</td>
+                          <td>$1.6</td>
+                        </tr>
+                        <tr>
+                          <td>NASA</td>
+                          <td>9</td>
+                          <td>$1.6</td>
+                          <td>15</td>
+                          <td>$1.3</td>
+                        </tr>
+                        <tr>
+                          <td>Other Federal</td>
+                          <td>101</td>
+                          <td>$16.4</td>
+                          <td>73</td>
+                          <td>$11.2</td>
+                        </tr>
+                        <tr>
+                          <td>Industry</td>
+                          <td>102</td>
+                          <td>$12.7</td>
+                          <td>123</td>
+                          <td>$16.9</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Nonprofit, Foundations, Associations, Societies
+                          </td>
+                          <td>582</td>
+                          <td>$71.1</td>
+                          <td>674</td>
+                          <td>$75.3</td>
+                        </tr>
+                        <tr>
+                          <td>Other Government</td>
+                          <td>46</td>
+                          <td>$7.4</td>
+                          <td>50</td>
+                          <td>$14.9</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td>Total</td>
+                          <td>1,287</td>
+                          <td>$331.7</td>
+                          <td>1,494</td>
+                          <td>$367.2</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
                 </div>
                 <div className={styles.one}>
                   <h3>Technology Transfer</h3>

@@ -25,6 +25,9 @@ const Story = ({ node }) => {
         <h2 className={styles.title}>{node.title}</h2>
         <div className={styles.imgMobile}>
           <Img alt={node.title} fluid={node.heroImage.fluid} />
+          {node.photoCredit && (
+            <div className={styles.credit}>{node.photoCredit}</div>
+          )}
         </div>
         <div
           dangerouslySetInnerHTML={{

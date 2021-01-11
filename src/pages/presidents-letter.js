@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import styles from "./pages.module.css";
 import Layout from "../components/layout";
+import img from "./scott-cowen.jpg";
 
 class President extends React.Component {
   render() {
@@ -15,10 +16,7 @@ class President extends React.Component {
                 Letter from the Interim President
               </h1>
               <div className={styles.scott}>
-                <img
-                  src="./scott-cowen.jpg"
-                  alt="Interim President Scott Cowen"
-                />
+                <img src={img} alt="Interim President Scott Cowen" />
               </div>
               <p>
                 The pandemic so dominated the last months of the 2019-2020
