@@ -4,6 +4,7 @@
   font-size: 3em;
   position: absolute;
   top: -2.5em;
+  letter-spacing: 0.05em;
 }
 
 .flex {
@@ -38,14 +39,15 @@
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  background: linear-gradient(to left, #0a304e 50%, black 50%);
+  background: linear-gradient(to left, #0a304e 50%, white 50%);
   background-size: 200% 100%;
   background-position: left bottom;
-  color: white;
+  color: #0a304e;
 }
 
 .button:hover {
   background-position: right bottom;
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {

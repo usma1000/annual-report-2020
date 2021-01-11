@@ -5,12 +5,16 @@ import img from "./cover.jpg";
 
 export default ({ children, home, icon }) => {
   const lineHeight = useSpring({
-    lineHeight: 1.65,
+    lineHeight: 1,
     from: { lineHeight: 0.5 },
   });
+  const titleStyle = home ? styles.titleHome : styles.title;
+  const heroStyle = home ? styles.heroHome : styles.hero;
+
   return (
-    <div className={styles.hero}>
-      <animated.h1 style={lineHeight} className={styles.title}>
+    <div className={heroStyle}>
+      {icon && <div className={styles.icon}>{icon}</div>}
+      <animated.h1 style={lineHeight} className={titleStyle}>
         {children}
       </animated.h1>
       {home && (
@@ -18,7 +22,6 @@ export default ({ children, home, icon }) => {
           <img className={styles.img} src={img} alt="students walking" />
         </div>
       )}
-      {icon && <div className={styles.icon}>{icon}</div>}
     </div>
   );
 };

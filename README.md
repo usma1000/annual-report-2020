@@ -12,3 +12,7 @@
 - Double check all Stats (most said possible)
 - Check accessibility
 - Hero replace img with gatsby img
+
+check hero home mobile
+story, padding on top isnt even with sides
+stats spacing on mobile

@@ -25,11 +25,10 @@ class RootIndex extends React.Component {
               url="/research"
               linkText="Explore Our Research"
             >
-              At Case Western Reserve, we aren’t scared of the unknown. We see
-              it as an opportunity—to understand, discover, find solutions and
-              even break new ground. By tackling tough questions with colleagues
-              across the campus, city, state and beyond, our faculty, staff and
-              students truly think beyond the possible.
+              At Case Western Reserve, we aren’t afraid of the unknown. We see
+              it as an opportunity—to understand, discover, find answers or even
+              break new ground. By tackling tough questions, our community truly
+              thinks beyond the possible.
             </PostSection>
             <PostSection
               icon={<InnovationSVG />}
@@ -39,9 +38,8 @@ class RootIndex extends React.Component {
             >
               Our faculty, staff and students know how to navigate change; in
               fact, they excel at it. In labs and classrooms—on campus and
-              wherever remote learning and work take them—they work together to
-              develop creative solutions to today’s pressing problems and
-              tomorrow’s potential challenges.
+              around the world—they work together to address to today’s pressing
+              problems and tomorrow’s potential challenges.
             </PostSection>
             <PostSection
               icon={<CommunitySVG />}
@@ -49,11 +47,11 @@ class RootIndex extends React.Component {
               url="/community"
               linkText="Learn About Our Community"
             >
-              In a time marked by separation, our faculty, staff and students
-              joined together—often from a distance—to show their commitment to
-              community, at Case Western Reserve, in Cleveland and beyond. Their
-              efforts, whether to support frontline health care workers or
-              address racial injustice, exemplify the true power of partnership.
+              In a time requiring separation, our faculty, staff and students
+              joined together as a community—even if often from a distance.
+              Their efforts, whether supporting frontline health care workers or
+              addressing racial injustice, exemplify our shared strengths and
+              ongoing engagement.
             </PostSection>
           </div>
         </div>

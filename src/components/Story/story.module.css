@@ -24,8 +24,8 @@
 }
 
 .story {
-  padding: 10vh 5vw;
-  width: 30vw;
+  padding: 5vw;
+  width: 60vw;
   min-width: 550px;
   background-color: black;
   border: 1px solid #c1cd24;
@@ -124,6 +124,12 @@ cite:before {
   font-style: italic;
 }
 
+@media only screen and (max-width: 1600px) {
+  .story {
+    width: 30vw;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .container {
     flex-direction: column-reverse;
@@ -140,7 +146,6 @@ cite:before {
     padding: 0;
   }
   .story {
-    padding: 5vw;
     margin: 0 auto 10vw auto;
     background-color: #0a304e;
     width: 100%;

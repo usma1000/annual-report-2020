@@ -4,7 +4,7 @@
 
 .waveContainer {
   position: absolute;
-  left: 200px;
+  left: 150px;
   right: 0;
   height: 100px;
   width: 100%;
@@ -25,5 +25,11 @@
   }
   100% {
     transform: translate3d(85px, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .waveContainer {
+    left: 0;
   }
 }

@@ -3,15 +3,8 @@ import { useSpring, animated } from "react-spring";
 import Img from "gatsby-image";
 import styles from "./story.module.css";
 import { useInView } from "react-intersection-observer";
-import rehypeReact from "rehype-react";
-import Stats from "../Stats/stats";
 
 const Story = ({ node }) => {
-  const renderAst = new rehypeReact({
-    createElement: React.createElement,
-    components: { counter: Stats },
-  }).Compiler;
-
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
@@ -46,9 +39,12 @@ const Story = ({ node }) => {
           </blockquote>
         )}
         {node.stats && (
-          <div className={styles.stats}>
-            {renderAst(node.stats.childMarkdownRemark.htmlAst)}
-          </div>
+          <div
+            className={styles.stats}
+            dangerouslySetInnerHTML={{
+              __html: node.stats.childMarkdownRemark.html,
+            }}
+          />
         )}
 
         {node.videoLink && (

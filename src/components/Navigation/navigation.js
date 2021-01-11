@@ -41,7 +41,9 @@ const Navigation = () => {
             <Link to="/community">Community</Link>
           </li>
           <li className={styles.more}>
-            <span>More ▼</span>
+            <span>
+              More <span className={styles.arrow}>▼</span>
+            </span>
             <ul className={styles.submenu}>
               <li className={styles.navigationItem}>
                 <Link to="/university-trustees-and-leadership">
@@ -53,6 +55,11 @@ const Navigation = () => {
               </li>
               <li className={styles.navigationItem}>
                 <Link to="/financials">Financials &amp; Numbers</Link>
+              </li>
+              <li className={styles.navigationItem}>
+                <a href="case.edu/advancingtogether/annual-report-2020.pdf">
+                  Download as PDF
+                </a>
               </li>
             </ul>
           </li>

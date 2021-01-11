@@ -3,11 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 1vmin 5vw;
-  color: #888;
+  color: #fff;
   position: relative;
   z-index: 2;
   background-color: black;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .copy {
@@ -30,7 +31,7 @@
 }
 
 .links a:hover {
-  color: white;
+  color: #ddd;
 }
 
 @media only screen and (max-width: 768px) {

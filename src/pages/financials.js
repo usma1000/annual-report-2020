@@ -208,7 +208,7 @@ class Financials extends React.Component {
                     </table>
                   </div>
                 </div>
-                <div className={styles.one}>
+                <div className={styles.one} style={{ marginLeft: "40px" }}>
                   <h3>Technology Transfer</h3>
                   <p>
                     <strong>61</strong> New Intellectual Property Deals with
