@@ -25,15 +25,15 @@ class President extends React.Component {
               </p>
               <p>
                 Our faculty helped discover a fossil of 3.8 million-year-old
-                hu-man ancestor. They applied tech-nology to break longtime
+                human ancestor. They applied technology to break longtime
                 barriers to human connection. And they advanced care for aging
                 adults across the country.
               </p>
               <p>
-                As we look with hope toward widespread COVID-19 vaccina-tions in
+                As we look with hope toward widespread COVID-19 vaccinations in
                 2021, this annual report reminds us of what we can do when
                 public health restrictions no longer dominate daily life. But it
-                also highlights the many ways this community demonstrat-ed
+                also highlights the many ways this community demonstrated
                 creativity, commitment and exceptional compassion in the face of
                 this crisis.
               </p>
@@ -41,7 +41,7 @@ class President extends React.Component {
                 From the rapid shift to remote learning to volunteer efforts for
                 health care workers, the homeless and one another, our faculty,
                 staff and students adapted, innovated, and always sought to
-                help. Their ongoing gener-osity continued to inspire — and even
+                help. Their ongoing generosity continued to inspire — and even
                 more, made a meaningful difference during such difficult times.
               </p>
               <p>
@@ -51,8 +51,8 @@ class President extends React.Component {
                 draw on one another for ideas, strength and support.
               </p>
               <p>
-                In short, we were Advancing Together this year — which is when
-                we are always at our best.
+                In short, we were <em>Advancing Together</em> this year — which
+                is when we are always at our best.
               </p>
               <p>With great appreciation,</p>
               <p>

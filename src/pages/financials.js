@@ -109,9 +109,9 @@ class Financials extends React.Component {
               <h2 className={styles.h2}>Research + Technology Highlights</h2>
 
               <div className={styles.container}>
+                <h3>Competitive Sponsored Research Projects*</h3>
                 <div className={styles.scroll}>
                   <div className={styles.three}>
-                    <h3>Competitive Sponsored Research Projects*</h3>
                     <table className={styles.table}>
                       <thead>
                         <tr>

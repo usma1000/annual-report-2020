@@ -39,7 +39,7 @@
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  background: linear-gradient(to left, #0a304e 50%, white 50%);
+  background: linear-gradient(to left, #c1cd24 50%, white 50%);
   background-size: 200% 100%;
   background-position: left bottom;
   color: #0a304e;
@@ -47,7 +47,6 @@
 
 .button:hover {
   background-position: right bottom;
-  color: white;
 }
 
 @media only screen and (max-width: 768px) {

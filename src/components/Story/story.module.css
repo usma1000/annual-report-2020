@@ -83,13 +83,14 @@ cite:before {
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  background: linear-gradient(to left, black 50%, #c1cd24 50%);
+  background: linear-gradient(to left, #c1cd24 50%, white 50%);
   background-size: 200% 100%;
-  background-position: right bottom;
+  background-position: left bottom;
+  color: #0a304e;
 }
 
 .button:hover {
-  background-position: left bottom;
+  background-position: right bottom;
   color: black;
 }
 
